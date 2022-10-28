@@ -1,9 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 #navbar {
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 70px;
+  width: 100vw;
+  padding: 20px 50px ;
   background-color:brown;
 }
 #navbar li{
@@ -29,11 +34,11 @@
   flex-direction: column;
   justify-content: center;
 }
+
 #welcome-section h1{
   color: #fff;
   letter-spacing: 1px;
   padding-bottom: 0%;
-
 }
 
 h4{
@@ -43,16 +48,35 @@ h4{
 }
 
 #projects{
-  width: 100%;
   background-color: rgb(60, 58, 177);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
 }
 
 .project-tile{
-  display: grid;
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
   height: 300px;
   margin: 10px;
-  border: 1px solid black;
+  border: 4px solid black;
+  background-color: white;
+}
+
+.project-tile a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 100%;
+  height: 50px;
+  background: rgb(71, 69, 69);
+  text-decoration: none;
+  color: white;
 }
 
 @media only screen and (max-width: 450px) {
