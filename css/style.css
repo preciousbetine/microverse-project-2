@@ -2,11 +2,57 @@
 #navbar {
   position: fixed;
   top: 0;
+  width: 100%;
+  height: 70px;
+  background-color:brown;
+}
+#navbar li{
+  display: inline;
+  padding: 10px;
+  float: right;
+  list-style: none;
+ 
+}
+#navbar li a{
+  color: #fff;
+  font-size: larger;
+  text-decoration: none;
+  margin: 10px;
 }
 
 
 #welcome-section {
   height: 100vh;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#welcome-section h1{
+  color: #fff;
+  letter-spacing: 1px;
+  padding-bottom: 0%;
+
+}
+
+h4{
+  color:rgb(192, 28, 28);
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+#projects{
+  width: 100%;
+  background-color: rgb(60, 58, 177);
+}
+
+.project-tile{
+  display: grid;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid black;
 }
 
 @media only screen and (max-width: 450px) {
